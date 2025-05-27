@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GlobeTrack</title>
+    <link rel="icon" href="/src/assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/themes.css" />
+
+</head>
+
+<body>
+    <header>
+        <h1>🌍 GlobeTrack: A Travel Journal with Real-Time Weather & Country Insights</h1>
+        <button id="theme-toggle" aria-label="Toggle theme">🌓</button>
+    </header>
+
+    <main>
+        <section id="search-section">
+            <input type="text" id="search-input" placeholder="Enter a city or country"
+                aria-label="Search for a destination" />
+            <button id="search-btn">Explore</button>
+        </section>
+
+        <section id="results-section">
+            <!-- Weather and country info will render here -->
+        </section>
+
+        <section id="journal-section">
+            <h2>Your Travel Journal</h2>
+            <div id="journal-entries">
+                <!-- Journal entries will be rendered here -->
+            </div>
+        </section>
+    </main>
+
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <h3>Add a Note</h3>
+            <textarea id="note-input" placeholder="Write about your experience..."></textarea>
+            <div class="modal-actions">
+                <button id="save-note">Save</button>
+                <button id="cancel-note">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Made with ✈️ by Your Name</p>
+    </footer>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

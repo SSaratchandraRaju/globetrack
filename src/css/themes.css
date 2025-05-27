@@ -1,0 +1,26 @@
+:root {
+  --bg-color: #fdfdfd;
+  --text-color: #1a1a1a;
+  --card-bg: #ffffff;
+  --border-color: #dcdcdc;
+  --accent-color: #0066ff;
+  --accent-hover: #0052cc;
+}
+
+/* Dark Theme */
+body.dark {
+  --bg-color: #1e1e1e;
+  --text-color: #f1f1f1;
+  --card-bg: #2a2a2a;
+  --border-color: #444;
+  --accent-color: #3399ff;
+  --accent-hover: #227acc;
+}
+
+/* Theme toggle button */
+#theme-toggle {
+  background: transparent;
+  font-size: 1.2rem;
+  border: none;
+  color: var(--text-color);
+}
